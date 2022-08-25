@@ -1,8 +1,18 @@
-------------------------------------
-Instruções
-------------------------------------
+==============================================
+Execucao rapida (diretamente do Docker Hub)
+==============================================
+1 - Instalar o Docker
+
+2 - Rodar o docker com os dados da imagem ja publicada no docker hub
+
+docker run -i -t -p 8888:8888 sauloandrade/fds:1.0 /bin/bash -c "jupyter notebook --notebook-dir=/opt/fds --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"
+
+==============================================
+Executando localmente from scratch
+==============================================
 
 1 - Instalar o Docker
+
 2 - Abrir o terminal e rodar o comando que cria uma nova imagem a partir do docker file desse diretorio config
     
 docker build -t trabalhofds/fds:1.0 .
@@ -13,38 +23,56 @@ docker run -i -t -p 8888:8888 trabalhofds/fds:1.0 /bin/bash -c "jupyter notebook
 
 4 - Abrir no navegador da maquina host, o jupyter notbook, com o token informado no final do comando anterior
 
-http://127.0.0.1:8888/?token=db1d4361da4e79a92ccf69637c87d21117ffdfb1e14a1911
+http://127.0.0.1:8888
 
 5 - Ir para o diretório do trabalho no jupyter, abrir o notebook e executar
 
-------------------------------------
+==============================================
 Outros Comandos importantes
-------------------------------------
+==============================================
 
 Imagens
 -----------
-1 - Listar as imagens configuradas no docker
+I - Listar as imagens configuradas no docker
 
 docker images
 
-2 - Remover uma imagem existente
+II - Remover uma imagem existente
 
 docker rmi <ID-IMAGEM>
 
 Container
 -----------
-1 - Listar todos os containers do docker (inclusive os inativos)
+I - Listar todos os containers do docker (inclusive os inativos)
 
 docker ps -a
 
-2 - Remover um container inativo
+II - Remover um container inativo
 
 docker rm <ID-CONTAINER>
 
-3 - Iniciar um container desativado (precisa saber o token para acessar o jupyter notbook apos o start)
+III - Iniciar um container desativado
 
 docker start <ID-CONTAINER>
 
-3 - Parar um container ativo
+IV - Parar um container ativo
 
 docker stop <ID-CONTAINER>
+
+Docker hub
+-----------
+I - Retaggeando uma imagem local para preparar o push para o docker hub
+
+docker tag <USER-LOCAL>/<NOME-LOCA>:<TAG-LOCAL>1.0 <DOCKE-USER>/<REPOSITORIO>:<TAG>
+
+EX: docker tag trabalhofds/fds:1.0 sauloandrade/fds:1.0
+
+II - Verificando se esta logado no docker hub
+
+docker login
+
+III - Fazendo push da imagem para o Docker hub (pode ser necessario ter que retaggear anterioremente) 
+
+docker push <DOCKE-USER>/<REPOSITORIO>:<TAG>
+
+EX: docker push sauloandrade/fds:1.0
