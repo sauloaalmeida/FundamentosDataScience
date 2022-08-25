@@ -53,7 +53,7 @@ docker rm <ID-CONTAINER>
 
 III - Iniciar um container desativado
 
-docker start <ID-CONTAINER>
+docker start -i <ID-CONTAINER>
 
 IV - Parar um container ativo
 
