@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.25)  25 AUG 2022 23:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.25)  26 AUG 2022 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,47 +291,57 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<fig1.jpg, id=13, 254.3904pt x 232.2276pt>
-File: fig1.jpg Graphic file (type jpg)
-<use fig1.jpg>
-Package pdftex.def Info: fig1.jpg  used on input line 108.
-(pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
+<fig2.jpg, id=13, 205.7286pt x 234.1548pt>
+File: fig2.jpg Graphic file (type jpg)
+<use fig2.jpg>
+Package pdftex.def Info: fig2.jpg  used on input line 99.
+(pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
-09.
+01.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-<fig2.jpg, id=14, 205.7286pt x 234.1548pt>
-File: fig2.jpg Graphic file (type jpg)
-<use fig2.jpg>
-Package pdftex.def Info: fig2.jpg  used on input line 115.
-(pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
-<table.jpg, id=15, 365.2044pt x 217.2918pt>
+
+LaTeX Warning: Reference `sec:figs' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `sec:figs' on page 2 undefined on input line 101.
+
+<table.jpg, id=14, 365.2044pt x 217.2918pt>
 File: table.jpg Graphic file (type jpg)
 <use table.jpg>
-Package pdftex.def Info: table.jpg  used on input line 133.
+Package pdftex.def Info: table.jpg  used on input line 121.
 (pdftex.def)             Requested size: 298.75264pt x 177.75932pt.
- [2 <./fig1.jpg>]
-(./trabalho-fds.bbl [3 <./fig2.jpg> <./table.jpg>]) [4] (./trabalho-fds.aux) ) 
+[2 <./fig2.jpg>]
+<fig1.jpg, id=19, 254.3904pt x 232.2276pt>
+File: fig1.jpg Graphic file (type jpg)
+<use fig1.jpg>
+Package pdftex.def Info: fig1.jpg  used on input line 140.
+(pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
+ [3 <./table.jpg> <./fig1.jpg>] (./trabalho-fds.bbl) [4]
+(./trabalho-fds.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5598 strings out of 480186
- 96077 string characters out of 5894355
+ 5604 strings out of 480186
+ 96154 string characters out of 5894355
  400349 words of memory out of 5000000
- 23484 multiletter control sequences out of 15000+600000
- 486652 words of font info for 58 fonts, out of 8000000 for 9000
+ 23489 multiletter control sequences out of 15000+600000
+ 488278 words of font info for 60 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 70i,10n,77p,294b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
-{
-/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
-elvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on trabalho-fds.pdf (4 pages, 214403 bytes).
+ 70i,10n,77p,294b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on trabalho-fds.pdf (4 pages, 216364 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
