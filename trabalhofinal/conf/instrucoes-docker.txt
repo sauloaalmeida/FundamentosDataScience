@@ -5,11 +5,11 @@ Execucao rapida (diretamente do Docker Hub)
 
 2 - Rodar o docker com os dados da imagem ja publicada no docker hub
 
+docker run -i -t -p 8888:8888 sauloandrade/fds:1.0 /bin/bash -c "jupyter notebook --notebook-dir=/opt/fds --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"
+
 3 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
 http://127.0.0.1:8888
-
-docker run -i -t -p 8888:8888 sauloandrade/fds:1.0 /bin/bash -c "jupyter notebook --notebook-dir=/opt/fds --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"
 
 ==============================================
 Executando localmente from scratch
