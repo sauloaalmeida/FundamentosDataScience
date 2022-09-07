@@ -5,7 +5,7 @@ Execucao rapida (diretamente do Docker Hub)
 
 2 - Rodar o docker com os dados da imagem ja publicada no docker hub
 
-docker run -i -t -p 8888:8888 sauloandrade/fds:1.0 /bin/bash -c "jupyter notebook --notebook-dir=/opt/fds --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"
+docker run -i -t -p 8888:8888 sauloandrade/fds:1.0 
 
 3 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
@@ -23,7 +23,7 @@ docker build -t trabalhofds/fds:1.0 .
     
 3 - Executar a imagem e com isso criar o container e rodando o jupter no diretorio que ele ja baixou o notebook do trabalho
 
-docker run -i -t -p 8888:8888 trabalhofds/fds:1.0 /bin/bash -c "jupyter notebook --notebook-dir=/opt/fds --ip='*' --NotebookApp.token='' --NotebookApp.password='' --port=8888 --no-browser --allow-root"
+docker run -i -t -p 8888:8888 trabalhofds/fds:1.0 
 
 4 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
